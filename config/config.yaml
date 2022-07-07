@@ -1,0 +1,50 @@
+log_config:
+  log_path: ./log/
+  log_level: info
+
+PROJECT_NAME: "zph"
+
+mysql_config_info:
+  username: root
+  password: zhangphh=520
+  host: localhost
+  port: 3306
+  db_name: m_blob
+  max_idle_conn: 10
+  max_open_conn: 100
+
+redis_config_info:
+  username: ""
+  password: "root@123"
+  host: 101.37.18.60
+  port: 6379
+  db: 0
+  pool_size: 100
+  max_retries: 3
+  min_idle_conns: 10
+
+jwt_secret_sand: 5fE56HFERr44l5EqtE6gLOIuy6%TlaeJ
+
+
+parse_ip_url: "http://v6r.ipip.net/?format=ip"
+parse_ip_url2: "https://ip.tool.lu"
+default_ip: "101.37.18.60"
+
+# http://localhost:9000/get_ip_source
+# 比parse_ip_url获取的更详细
+ip_detail_url: https://tool.lu/ip/ajax.html
+region_msg_url: "https://restapi.amap.com/v3/ip"
+
+browser_detail_url: https://api.tool.dute.me/tool/userAgentDetector
+
+qq_image_url: "https://q.qlogo.cn/g?b=qq&nk=%s&s=100"
+github_token: "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"
+github_upload_api: "https://api.github.com/repos/%s/%s/contents%s/%s"
+cdn_url_github: "https://cdn.jsdelivr.net/gh/%s/%s%s/%s"
+github_username: "JCoffeeZPH"
+github_repos: "image_repo"
+github_repos_path: "/comment/images"
+
+internal_service_host: "http://101.37.18.60:9000"
+
+default_avatar_url: "/img/avatar.jpg"
